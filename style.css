@@ -12,12 +12,14 @@
     letter-spacing: 0.4px;
     text-transform: capitalize;
     transition:  .2s linear;
+    /* background-color: #35374B; */
+    
     
 }
 
 .navi {
    
-  background-color: #000000;
+  background-color: #344955;
     /* padding: 15px; */
     display: flex;
     align-items: center; 
@@ -216,6 +218,6 @@ nav li:hover {
 {
     .project 
     {
-   padding:20px;
+        padding:20px;
     }
 }

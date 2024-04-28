@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,6 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-
 .navi {
     background-color: #160013;
     display: flex;
@@ -25,14 +24,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: roboto;
     font-size: 50px;
-    color: #ff05ff; /* Corrected color value */
+    cursor: pointer;
+    color: #ff05ff;
 }
-
 nav ul {
     display: flex;
     justify-content: flex-end;
 }
-
 nav li {
     list-style: none;
     cursor: pointer;
@@ -40,7 +38,7 @@ nav li {
 }
 
 .navi li a {
-    color: #ff05ff; /* Corrected color value */
+    color: #ff05ff;
     text-decoration: none;
     font-weight: 700;
     font-style: helvetica, arial, helvetica;
@@ -54,30 +52,31 @@ nav li {
 }
 
 .round-frame img {
-    width: 15vw;
+    width: 20vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px #ff05ff; /* Corrected color value */
+    box-shadow: 0 0 20px #ff05ff; 
     cursor: pointer;
-    border: 3px solid #ff05ff; /* Corrected color value */
+    border: 3px solid transparent transparent; 
     transition: 0.2s ease-in-out;
     margin-top: 20px;
+}
+.round-frame img:hover
+{
+     box-shadow: 0 0 50px #ff05ff; 
 }
 
 .name {
     text-align: center;
-    color: #ff05ff; /* Corrected color value */
+    color: #ff05ff; 
     font-size: 50px;
 }
-
 nav li:hover {
-    text-decoration: underline;
-    color: #ff05ff; /* Corrected color value */
+    text-decoration: underline 5px;
+    color: #ff05ff;
 }
-
 .introduction {
     background-color: #000000;
 }
-
 .intro {
     padding: 10px;
     width: 50%;
@@ -88,18 +87,15 @@ nav li:hover {
     font-style: helvetica;
     text-align: center;
 }
-
 .intr {
     font-style: helvetica;
     text-align: center;
-    color: #872e7e;
+    color: #f042de;
 }
-
 .col1 {
     padding-bottom: 0px;
     margin-top: -75px;
 }
-
 .skill {
     display: flex;
     flex-wrap: wrap;
@@ -108,16 +104,14 @@ nav li:hover {
     padding: 20px;
     margin-top: -30px;
 }
-
 .skills {
-    font-size: 50px;
-    color: #ff05ff; /* Corrected color value */
+    font-size: 40px;
+    color: #ff05ff; 
     margin-bottom: 30px;
     margin-top: 60px;
     text-align: center;
     background-color: #000000;
 }
-
 .col1 {
     background-color: #000000;
 }
@@ -134,7 +128,7 @@ nav li:hover {
 }
 
 .skill-box:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 15px rgba(255, 4, 201, 0.3);
     transform: scale(1.03);
 }
 
@@ -152,7 +146,7 @@ nav li:hover {
 }
 
 .icon1:hover {
-    box-shadow: 0 10px 15px #ff05ff; /* Corrected color value */
+    box-shadow: 0 10px 15px #ff05ff; 
     transform: scale(1.07);
 }
 
@@ -171,7 +165,7 @@ nav li:hover {
 .headin {
     text-align: center;
     padding-bottom: 15px;
-    color: #ff05ff; /* Corrected color value */
+    color: #ff05ff; 
     text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     font-size: 50px;
     font-style: roboto;
@@ -214,17 +208,28 @@ nav li:hover {
     .project {
         padding: 20px;
     }
+    .navi
+    {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .round-frame img
+    {
+        width:50vw;
+    }
+    
 }
 
 .timeline
 {
     
-    margin-top: -15px;
+    margin-top: -20px;
     background-color: #000000;
-    margin-top: -15px;
+    
     display: flex;
-    justify-content: center; /* Aligns content horizontally to the center */
-    align-items: center; /* Aligns content vertically to the center */
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column; 
     margin-bottom: 75px;
 }
@@ -233,6 +238,7 @@ nav li:hover {
     color:#ff05ff;
     font-style: helvetica;
     font-size: 50px;
+    font-weight: 600px;
     margin-bottom: 10px;
 }
 
@@ -244,7 +250,7 @@ nav li:hover {
 }
 
 .timeline-list {
-    font-size: 16px; /* Adjusted font size */
+    font-size: 16px; 
     margin-left: 45px;
 }
 .h4timeline-item-title
@@ -280,6 +286,7 @@ font-style: helvetica;
     position: absolute;
     top: -25px;
     left: -30px;
+    
     width: 1px;
     height: calc(100% + 50px);
     background: #ff05ff; 
@@ -288,6 +295,7 @@ font-style: helvetica;
 .timeline-item::after {
     content: "";
     position: absolute;
+    
     top: 5px;
     left: -33px;
     height: 6px;
@@ -299,7 +307,8 @@ font-style: helvetica;
 
 .timeline-text {
     color: #cf6efa ; 
-    font-weight: 300; 
-    line-height: 1.6;
-    font-style:helvetica; ;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }

@@ -58,9 +58,9 @@ nav li:hover {
         padding-top: 20px;
         padding-bottom: 20px;
         flex-wrap: wrap;
-       
-    justify-content: space-evenly;
-        flex-basis: 1000%;
+     justify-content: space-evenly;
+        flex-basis: 10000%;
+        font-size: 10px;
        height: auto;
       
     }
